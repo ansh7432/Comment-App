@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --background: 15 23 42; /* slate-900 */
+  --foreground: 248 250 252; /* slate-50 */
+  --card: 30 41 59; /* slate-800 */
+  --card-foreground: 248 250 252; /* slate-50 */
+  --popover: 30 41 59; /* slate-800 */
+  --popover-foreground: 248 250 252; /* slate-50 */
+  --primary: 37 99 235; /* blue-600 */
+  --primary-foreground: 248 250 252; /* slate-50 */
+  --secondary: 51 65 85; /* slate-700 */
+  --secondary-foreground: 248 250 252; /* slate-50 */
+  --muted: 51 65 85; /* slate-700 */
+  --muted-foreground: 148 163 184; /* slate-400 */
+  --accent: 51 65 85; /* slate-700 */
+  --accent-foreground: 248 250 252; /* slate-50 */
+  --destructive: 239 68 68; /* red-500 */
+  --destructive-foreground: 248 250 252; /* slate-50 */
+  --border: 71 85 105; /* slate-600 */
+  --input: 71 85 105; /* slate-600 */
+  --ring: 37 99 235; /* blue-600 */
+  --radius: 0.5rem;
+}
+
+body {
+  background: rgb(15 23 42); /* slate-900 */
+  color: rgb(248 250 252); /* slate-50 */
+  font-family: var(--font-geist-sans, ui-sans-serif, system-ui);
+  min-height: 100vh;
+}
+
+/* Scrollbar styling for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(15 23 42); /* slate-900 */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(71 85 105); /* slate-600 */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(100 116 139); /* slate-500 */
+}
+
+/* Make sure all text is visible */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Force dark theme on all elements */
+.dark, [data-theme="dark"] {
+  color-scheme: dark;
+}
